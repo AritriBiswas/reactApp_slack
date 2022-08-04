@@ -4,9 +4,15 @@
     height: 100vh;
     
     display: grid;
-    /* clip-path: circle(20% at 10% 10%); */
+  
     place-items: center;
+} 
+
+.email{
+    width: '260px';
+    border-radius: 4px;
 }
+
 
 .bg{
     background-color: black;
@@ -38,8 +44,8 @@
 
 .login__container {
     position: relative;
-    width:280px;
-    height:400px;
+    width:300px;
+    height:600px;
     margin: 30px;
     box-shadow: 11px 11px 50px rgb(37, 37, 37);
     border-radius: 15px;
@@ -48,14 +54,22 @@
     backdrop-filter: blur(5px);
     padding: 100px;
     text-align: center;
-    /* background-color: rgb(46, 46, 46); */
+   
     border-radius: 20px;
+    color:white;
     border-top: 1px solid rgb(99, 99, 99);
     border-left: 1px solid rgb(99, 99, 99);
     
     
 
 }
+@media only screen and (max-width: 571px){
+    .login__container{
+        height:500px;
+        width:200px;
+    }
+}
+    
 
 .login__container>img {
     object-fit: contain;
@@ -64,13 +78,26 @@
     margin-bottom: 40px;
 }
 
+form{
+    padding:10px 1px 1px 1px;
+}
+
+submit{
+    background-color: bisque;
+}
+
 .login__container>button {
     position: relative;
-    margin: 75px;
+    margin: 33px;
     text-transform: inherit !important;
-    background-color: #59085c !important;
+    /* background-color: #59085c !important; */
+  
     color: white;
     font-weight: 900;
     font-size: large;
+    border: 2px solid transparent;
+  border-image: linear-gradient(45deg, blue,rgb(224, 92, 114));
+  border-image-slice: 1;
+  border-radius: 12px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

@@ -46,11 +46,11 @@ const Sidebar = () => {
             <SidebarOption Icon={InboxIcon} title="Mentions & reactions" />
             <SidebarOption Icon={DraftsIcon} title="Saved items" />
             <SidebarOption Icon={BookmarkBorderIcon} title="Channel browser" />
-            <SidebarOption Icon={PeopleAltIcon} title="People & user groups" />
+            
             <SidebarOption Icon={AppsIcon} title="Apps" />
             <SidebarOption Icon={FileCopyIcon} title="File browser" />
             <SidebarOption Icon={ExpandLessIcon} title="Show less" />
-            <SidebarOption title='YouTube' />
+            
             <hr />
             <SidebarOption Icon={ExpandMoreIcon} title="Channels" />
             <hr />

@@ -6,6 +6,14 @@ import db from './firebase'
 const SidebarOption = ({ Icon, id, addChannelOption, title }) => {
     const history = useHistory();
 
+    const handleDelete = () => {
+       
+        console.log("hi")
+       
+        db.collection('rooms').doc().delete();
+        
+
+    }
     const selectChannel = () => {
         if (id) {
             history.push(`/room/${id}`)
@@ -30,9 +38,17 @@ const SidebarOption = ({ Icon, id, addChannelOption, title }) => {
                 <h3>{title}</h3>
             ) : (
                     <h3 className="sidebarOption__channel">
-                        <span className="sidebarOption__hash"> # </span> {title}
+                        <span className="sidebarOption__hash"> # </span> {title} <button onClick={handleDelete}>Delete</button>
+
+                        
                     </h3>
+                    
+                        
+                
+
+                    
                 )}
+                {/* <button>Delete</button> */}
         </div>
     )
 }
