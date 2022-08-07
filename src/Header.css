@@ -31,6 +31,12 @@
     border: 1px solid rgb(255, 255, 255);
     border-radius: 6px;
 }
+@media only screen and (max-width: 571px){
+    .header__search{
+       display:none;
+
+    }
+}
 
 .header__search>input {
     background-color: transparent;
@@ -50,4 +56,10 @@
 .header__right>.MuiSvgIcon-root {
     margin-left: auto;
     margin-right: 20px;
+}
+@media only screen and (max-width: 571px){
+    .header__right>.MuiSvgIcon-root {
+        display:none;
+
+    }
 }

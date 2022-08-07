@@ -169,7 +169,7 @@ const Login = () => {
             
             <p>Forgot password?</p>
             <p>Already using Slack?</p>
-            <Link to="/Signin" style={{padding:"12px", textDecoration:"none", color: "white", margin: "12px", color:"pink"}}>Sign In to an existing workspace</Link>
+            <Link to="/Signin" style={{padding:"12px", textDecoration:"none",  margin: "12px", color:"pink"}}>Sign In to an existing workspace</Link>
             </div>
             {/* <h3>Error {formaterrors()}</h3> */}
         </div >

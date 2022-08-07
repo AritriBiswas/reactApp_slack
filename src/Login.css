@@ -65,8 +65,11 @@
 }
 @media only screen and (max-width: 571px){
     .login__container{
+        position: relative;
         height:500px;
         width:200px;
+        margin: 30px;
+
     }
 }
     

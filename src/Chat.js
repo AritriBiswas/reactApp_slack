@@ -15,7 +15,7 @@ const Chat = () => {
         if (roomId) {
             db.collection("rooms")
                 .doc(roomId)
-                .onSnapshot((snapshot) => setRoomDetails(snapshot.data()));
+                .onSnapshot((snapshot) => console.log(setRoomDetails(snapshot.data())));
         }
 
         db.collection("rooms")

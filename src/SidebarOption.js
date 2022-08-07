@@ -8,9 +8,9 @@ const SidebarOption = ({ Icon, id, addChannelOption, title }) => {
 
     const handleDelete = () => {
        
-        console.log("hi")
+        console.log("id is",    id);
        
-        db.collection('rooms').doc().delete();
+        db.collection('rooms').doc(id).delete();
         
 
     }
