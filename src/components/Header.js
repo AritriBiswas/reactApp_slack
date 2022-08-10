@@ -1,13 +1,26 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Header.css'
 import { Avatar } from '@material-ui/core'
 import AccessTimeIcon from '@material-ui/icons/AccessTime';
 import SearchIcon from '@material-ui/icons/Search';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import { useStateValue } from './StateProvider';
+import MenuIcon from '@material-ui/icons/MenuRounded';
+import Sidebar from './Sidebar';
+
+
 
 const Header = () => {
     const [{user}]=useStateValue()
+    const [isShow, setIsShow] = useState(false);
+
+    const displayMenu = (e) => {
+        setIsShow(current => !current);
+    }
+    // const displayMenu = () => {
+    //     console.log("menu")
+    // }
+
 
     return (
         <div className='header' >
@@ -25,9 +38,23 @@ const Header = () => {
                 <HelpOutlineIcon />
             </div>
 
+           
+
+            <button className="signout">Signout</button>
+
+            <div onClick={displayMenu} className="hamburger">
+                <MenuIcon />
+            </div>
+
+            {isShow && (
+                <div>
+                    <Sidebar>
+                        </Sidebar>
+                    </div>
+            )}
             {/* <div className="hamburger">
-                </>
-            </div> */}
+                </> */}
+            {/* </div> */}
 
 
         </div>

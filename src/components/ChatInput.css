@@ -26,5 +26,13 @@
     width: 0;
     border: none;
     background-color: transparent;
+    position: fixed;
+    bottom: 30px;
+    
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 20px;
+    align-items: center;
   }
   

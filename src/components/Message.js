@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Message.css";
+import Sidebar from './Sidebar';
 
 function Message({ message, timestamp, user, userImage }) {
     return (
@@ -13,6 +14,7 @@ function Message({ message, timestamp, user, userImage }) {
                     </span>
                 </h4>
                 <p>{message}</p>
+                {/* <Sidebar/> */}
             </div>
         </div>
     )

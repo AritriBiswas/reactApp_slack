@@ -6,8 +6,8 @@
     /* background-color: var(--slack-color); */
     background-color: rgb(81, 81, 253);
     color: rgb(255, 255, 255);
+    font-family:"Roboto";
 }
-
 .header__left {
     flex: 0.3;
     display: flex;
@@ -59,6 +59,26 @@
 }
 @media only screen and (max-width: 571px){
     .header__right>.MuiSvgIcon-root {
+        display:none;
+
+    }
+}
+
+.signout{
+    background-color:#49274b;
+    padding: 7px;
+    border-radius: 6px;
+    color: white;
+    margin: 3px;
+    border: none;
+}
+
+.hamburger>.MuiSvgIcon-root {
+    margin: 7px;
+}
+
+@media only screen and (min-width: 571px){
+    .hamburger>.MuiSvgIcon-root {
         display:none;
 
     }

@@ -4,6 +4,7 @@ import "./ChatInput.css";
 import db from "./firebase";
 import firebase from "firebase";
 import { useStateValue } from "./StateProvider";
+import SendRoundedIcon from '@material-ui/icons/SendRounded';
 
 function ChatInput({ channelName, channelId }) {
     const [input, setInput] = useState("");
@@ -30,7 +31,9 @@ function ChatInput({ channelName, channelId }) {
                     onChange={(e) => setInput(e.target.value)}
                     placeholder={`Message #${channelName?.toLowerCase()}`}
                 />
-                <button type="sumbit" onClick={sendMessage}>SEND</button>
+                <button type="sumbit" onClick={sendMessage}><div className="send">
+                <SendRoundedIcon/>
+            </div></button>
             </form>
         </div>
     )

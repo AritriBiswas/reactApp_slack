@@ -2,13 +2,15 @@ import React from 'react'
 import './SidebarOption.css'
 import { useHistory } from "react-router-dom";
 import db from './firebase'
+import Delete from '@material-ui/icons/DeleteOutlineOutlined';
+
 
 const SidebarOption = ({ Icon, id, addChannelOption, title }) => {
     const history = useHistory();
 
     const handleDelete = () => {
        
-        console.log("id is",    id);
+        // console.log("id is",    id);
        
         db.collection('rooms').doc(id).delete();
         
@@ -38,8 +40,11 @@ const SidebarOption = ({ Icon, id, addChannelOption, title }) => {
                 <h3>{title}</h3>
             ) : (
                     <h3 className="sidebarOption__channel">
-                        <span className="sidebarOption__hash"> # </span> {title} <button onClick={handleDelete}>Delete</button>
-
+                       
+                        <span className="sidebarOption__hash"> # {title} <span onClick={handleDelete} className="delete">
+                <Delete />
+            </span>
+            </span> 
                         
                     </h3>
                     

@@ -144,7 +144,7 @@ const Login = () => {
                     alt=""
                 />
 
-                <h1>Sign in</h1>
+                <h1 className='signin'>SignIn</h1>
                 
                 <Button onClick={signIn}>Sign in with Google</Button>
                 <p>OR</p>
@@ -165,7 +165,7 @@ const Login = () => {
             </form>
             
             </div>
-            <Button >SignUp</Button>
+            <Button className='signup'>SignUp</Button>
             
             <p>Forgot password?</p>
             <p>Already using Slack?</p>
