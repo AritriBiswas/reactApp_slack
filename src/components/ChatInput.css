@@ -23,16 +23,20 @@
   
   .chatInput > form > button {
     height: 0;
-    width: 0;
+    width: 70vh;
     border: none;
     background-color: transparent;
     position: fixed;
     bottom: 30px;
     
     outline: none;
-    border: 1px solid gray;
+    
     border-radius: 3px;
     padding: 20px;
     align-items: center;
   }
   
+  .submit{
+    border:none;
+
+  }

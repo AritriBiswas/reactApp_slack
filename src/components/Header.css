@@ -74,6 +74,7 @@
 }
 
 .hamburger>.MuiSvgIcon-root {
+    top: 20px;
     margin: 7px;
 }
 
@@ -83,3 +84,11 @@
 
     }
 }
+
+@media only screen and (max-width: 571px){
+    .signout{
+       display:none;
+
+    }
+}
+

@@ -2,8 +2,8 @@ import firebase from 'firebase'
 import "firebase/auth"
 import "firebase/database"
 import "firebase/storage"
-import "firebase/messaging"
-// require('dotenv').config({path:""})
+// import "firebase/messaging"
+// // require('dotenv').config({path:""})
 // import {getMessaging,getToken} from "firebase/messaging";
 
 

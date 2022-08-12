@@ -7,7 +7,7 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import { useStateValue } from './StateProvider';
 import MenuIcon from '@material-ui/icons/MenuRounded';
 import Sidebar from './Sidebar';
-
+import ClearIcon from '@material-ui/icons/Clear';
 
 
 const Header = () => {
@@ -21,11 +21,15 @@ const Header = () => {
     //     console.log("menu")
     // }
 
+    const ProfileMenu = (e) => {
+
+    }
+
 
     return (
         <div className='header' >
             <div className="header__left">
-                <Avatar className="header__avatar" src={user?.photoURL} alt={user?.displayName} />
+                <Avatar onCLick={ProfileMenu} className="header__avatar" src={user?.photoURL} alt={user?.displayName} />
                 <AccessTimeIcon />
             </div>
 
@@ -45,6 +49,10 @@ const Header = () => {
             <div onClick={displayMenu} className="hamburger">
                 <MenuIcon />
             </div>
+
+            
+
+
 
             {isShow && (
                 <div>
